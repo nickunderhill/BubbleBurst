@@ -28,13 +28,13 @@ public class GameBoard extends JFrame {
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         random = new Random();
         bubbles = new ArrayList<>();
-        PaintBalls canvas = new PaintBalls(bubbles);
+        PaintBubbles canvas = new PaintBubbles(bubbles);
         canvas.setBackground(Color.white);
         canvas.setPreferredSize(new Dimension(WINDOW_WIDTH, WINDOW_HEIGHT));
         canvas.addMouseListener(new MouseAdapter() {
             @Override
             public void mouseReleased(MouseEvent e) {
-                canvas.deleteBall(e.getX(), e.getY());
+                canvas.deleteBubble(e.getX(), e.getY());
                 canvas.repaint();
             }
         });
