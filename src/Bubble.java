@@ -1,11 +1,11 @@
 import javax.swing.*;
 import java.awt.*;
 
-public class Ball extends JPanel {
+public class Bubble extends JPanel {
     int x, y, d;
     Color color;
 
-    Ball(int x, int y, int d, Color color) {
+    Bubble(int x, int y, int d, Color color) {
         this.x = x;
         this.y = y;
         this.d = d;
