@@ -11,11 +11,6 @@ public class GameBoard extends JFrame {
     private static final int COUNT_BALLS = 100;
     private final String TITLE_OF_PROGRAM = "Bubble Burst";
     private static Random random;
-
-    public static ArrayList<Bubble> getBubbles() {
-        return bubbles;
-    }
-
     private static ArrayList<Bubble> bubbles;
     private final Color[] COLORS = {Color.red, Color.green, Color.blue, Color.cyan, Color.magenta};
 
@@ -59,5 +54,9 @@ public class GameBoard extends JFrame {
 
     public static int getWindowWidth() {
         return WINDOW_WIDTH;
+    }
+
+    public static ArrayList<Bubble> getBubbles() {
+        return bubbles;
     }
 }

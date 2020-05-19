@@ -10,12 +10,11 @@ public class Game {
         int counter = 0;
         while (true) {
             board.addBubble();
-            if (GameBoard.getBubbles().size() >= 5) {
-                System.out.println("Game Over: " + counter);
-                break;
-            }
             board.repaint();
             counter++;
+            if (counter >= 5) {
+                break;
+            }
             if (counter % 10 == 0 && showDelay > 100) {
                 showDelay -= 100;
             }
@@ -26,5 +25,4 @@ public class Game {
             }
         }
     }
-
 }
